@@ -30,7 +30,7 @@ ul li
   text-align:center;
   border-right: 1px solid black;
   line-height:2;
-    display: block;
+  display: block;
 }
 ul li a
 {  padding: 20px 20px;
@@ -44,4 +44,7 @@ ul li a
 .topnav a:active
 {
   color:blue;
+  width:100%;
 }
+
+
