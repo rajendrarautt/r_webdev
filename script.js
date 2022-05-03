@@ -1,35 +1,53 @@
-$(document).ready(function()
-{
-    $('#home').click(function()
-    {
-        console.log(alert("MF are you ready?"));
+$(document).ready(function () {
+    $('#submit').click(function(){
+        let username = $("#uname").val();
+        let password = $("password").val();
+        if(username == "rajan" && password == "rajan")
+        {
+            alert("Succesfully Logged in");
+        }
     });
-    $('#home').click(function(){
-        alert("Are you ready MF?");
-    });
-    $('#fucking_f_heading').click(function(){
-        $(this).hide();
-        $('#fucking_f_headings').Show();
-    });
+
+    // $('#container_heading').click(function () {
+    //     $(this).hide();
+    //     $('#container_heading').Show();
+    // });
+    // $("h3").click(function(){
+    //     $(".container_head").fadeOut(3300);
+    // });
+
+
 });
 
 // $(document).ready(function(){
 //     $('#home').click(function(){
-//         alert("Are you ready MF?");
-//     });
-//     $('#fucking_f_heading').click(function(){
-//         $(this).hide();
-//         $('#fucking_f_headings').Show();
-//     });
+//
 // });
-    function createTableforABC()
-{
+function createTableforABC() {
     let b = "";
-    for(const a = 1; a<=8; a++)
-    {
-        alert("The First Fucker is you");
-        b += "The First Fucker is you " + a + "<br>";
-        document.body.innerHTML= b;
+    for (let a = 1; a <= 8; a++) {
+        b += "ancb djjdjkd " + a + "<br>";
+        document.getElementById("container_heading").innerHTML = b;
+        
     }
+    function submitBtn()
+    {
+        if($('#uname').val() == "rajan" && $('#password').val()== "rajan")
+        alert("Successfully submitted");
+        else
 
+        {
+            let txt = "Cannot be submitted";
+            document.getElementById("submit").innerHTML = txt;
+        }
+    }
+    function checkSubmit()
+    {
+        var username = $('#uname').val();
+        var password = $('#password').val();
+        alert(uname +" and" +password);
+        console.log(uname);
+        console.log(password);
+    }
+   
 }
